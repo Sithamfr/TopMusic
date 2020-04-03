@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Top music</title>
+		<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}" sizes="32x32"/>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+			<section id="main">
+				<header>
+					<span class="avatar"><img src="{{ url_for('static', filename='images/avatar.jpg') }}" alt="" /></span>
+					<h1>Top music</h1>
+					<h3>Who's my favourite singer ?</h3>
+				</header>
+				<br>
+				<div align="center">
+					<footer>
+						<a href="https://www.deezer.com/"><img src="{{ url_for('static', filename='images/deezer.png') }}" width=60></a>
+					</footer>
+				</div>
+				Enter the link of your playlist
+				<form action="{{ url_for('podium') }}" method="post" >
+					<input type="text" name="link" placeholder="Your link">
+					<br>
+					<input type="submit" value="Let's go"/>
+				</form>
+			</section>
+		</div>
+		<script>
+			if ('addEventListener' in window) {
+				window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+				document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+			}
+		</script>
+	</body>
+</html>

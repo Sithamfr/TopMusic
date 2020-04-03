@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Top music</title>
+		<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}" sizes="32x32" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}" /></noscript>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<body class="is-preload">
+			<div id="wrapper">
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="{{ url_for('static', filename='images/avatar.jpg') }}" alt="" /></span>
+							<h1>Top music</h1>
+							<h3>Who's my favourite singer ?</h3>
+						</header>
+						<br>
+						<table>
+						{% for ligne in tableau %}
+							<tr>
+								<td style="padding-right:5px">
+									<span aria-label="Artist page">
+										<form action={{ligne[0]}} target="_blank">
+											<button><i class="fa fa-music"></i></button>
+										</form>
+									</span>
+								</td>
+								<td style="padding-right:20px">
+									<form action={{ligne[1]}} target="_blank">
+										<button><i class="fa fa-play"></i></button>
+									</form>
+								<td style="padding-right:10px">
+								<td>
+									{{ ligne[2] }}
+								</td>
+								<td>
+									{{ ligne[3] }}
+								</td>
+							</tr>
+						{% endfor %}
+						</table>
+						<br>
+						<form metho="post" action="/" name="from_err">
+							<input type="submit" value="Home"/>
+						</form>
+					</section>
+			</div>
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+	</body>
+</html>
