@@ -4,16 +4,16 @@ A flask app with Python to get the artists rankings for a Deezer® playlist
 ## Files path
 
 +Application<br>
-|    /application.py   `main program`<br>
-|    /create_img.py    `module 1`<br>
+|    /application.py   `main program`
+|    /create_img.py    `module 1`
 |    /deezer_pl.py     `module 2`
 |    /requirements.txt `dependencies, obtained with "pip freeze"`
-|    +templates    `templates folder`
+|    +templates        `templates folder`
 |    |    /index.html
 |    |    /result.html
 |    |    /rankings.html
 |    |    /error.html
-|    +static
+|    +static            `static folder`
 |    |    +styles
 |    |    |    /main.css
 |    |    |    /noscript.css
