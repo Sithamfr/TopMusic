@@ -1,4 +1,4 @@
-<div align="center>
+<div align="center">
   <img src="https://github.com/Sithamfr/TopMusic/blob/master/Application/static/images/favicon.png"/>
 </div>
 
