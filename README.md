@@ -1,5 +1,5 @@
 <div align="center>
-  ![alt text](https://github.com/Sithamfr/TopMusic/blob/master/Application/static/images/favicon.png)
+  <img src="https://github.com/Sithamfr/TopMusic/blob/master/Application/static/images/favicon.png"/>
 </div>
 
 # TopMusic
