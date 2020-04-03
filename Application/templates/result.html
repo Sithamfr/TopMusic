@@ -5,8 +5,8 @@
 		<link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}" sizes="32x32" />
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}" />
-		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}" /></noscript>
+		<link rel="stylesheet" href="{{ url_for('static', filename='styles/mainstyle.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='styles/mainstyle.css') }}" /></noscript>
 	</head>
 	<body class="is-preload">
 			<div id="wrapper">
@@ -16,7 +16,7 @@
 							<h1>Top music</h1>
 							<h3>Who's my favourite singer ?</h3>
 						</header>
-						<img src="{{ url_for('static', filename='images/podium_fin.png') }}" alt="Podium" width="100%"/>
+						<img src="{{ url_for('static', filename='images/podium_end.png') }}" alt="Podium" width="100%"/>
 						<br><br>
 						<form metho="post" action="ranking" name="link">
 							<input type="submit" value="Ranking"/>
