@@ -3,9 +3,9 @@ A flask app with Python to get the artists rankings for a Deezer® playlist
 
 ## Files path
 
-+Application
-|    /application.py   `main program`
-|    /create_img.py    `module 1`
++Application<br>
+|    /application.py   `main program`<br>
+|    /create_img.py    `module 1`<br>
 |    /deezer_pl.py     `module 2`
 |    /requirements.txt `dependencies, obtained with "pip freeze"`
 |    +templates    `templates folder`
