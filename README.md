@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/Sithamfr/TopMusic/blob/master/Application/static/images/favicon.png"/>
+  <img src="https://github.com/Sithamfr/TopMusic/blob/master/Application/static/images/favicon.png"/ width="60">
 </div>
 
 # TopMusic
