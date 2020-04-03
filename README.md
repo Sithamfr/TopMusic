@@ -11,6 +11,6 @@ A flask app with Python to get the artists rankings for a Deezer® playlist
 
 ## Demonstration
 
-[![Watch the video](https://raw.githubusercontent.com/Sithamfr/TopMusic/master/img_index.png)](https://youtu.be/vt5fpE0bzSY)
+[![Watch the video](https://raw.githubusercontent.com/Sithamfr/TopMusic/master/img_index.png)](https://youtu.be/I-3lwewANzE)
 
 Click on the image to see it.
